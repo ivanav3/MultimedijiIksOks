@@ -1,0 +1,50 @@
+<resources>
+
+    <style name="stiloviDugmad">
+
+        <item name="android:layout_width">95dp</item>
+        <item name="android:layout_height">95dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:onClick">buClick</item>
+        <item name="android:text">" "</item>
+
+    </style>
+
+    <style name="stiloviOpcije">
+
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">#4397A0</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="stiloviDugmad2">
+
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:onClick">buClick</item>
+        <item name="android:text">" "</item>
+
+    </style>
+
+    <style name="stiloviOpcije2">
+
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">#4397A0</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+</resources>
