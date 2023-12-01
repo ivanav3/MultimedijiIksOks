@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#E5EEEE"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:configChanges="orientation|screenSize">
 
     <TextView
+        android:id="@+id/text_view_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Kliknite na polje koje želite da izaberete"
+        android:textColor="#315161"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/bu1"
+            style="@style/stiloviDugmad" />
+
+        <Button
+            android:id="@+id/bu2"
+            style="@style/stiloviDugmad" />
+
+        <Button
+            android:id="@+id/bu3"
+            style="@style/stiloviDugmad" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bu4"
+            style="@style/stiloviDugmad" />
+
+        <Button
+            android:id="@+id/bu5"
+            style="@style/stiloviDugmad" />
+
+        <Button
+            android:id="@+id/bu6"
+            style="@style/stiloviDugmad" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bu7"
+            style="@style/stiloviDugmad" />
+
+        <Button
+            android:id="@+id/bu8"
+            style="@style/stiloviDugmad" />
+
+        <Button
+            android:id="@+id/bu9"
+            style="@style/stiloviDugmad" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/restart"
+        style="@style/stiloviOpcije"
+
+        android:onClick="restartuj"
+        android:text="Restart" />
+
+    <Button
+        android:id="@+id/izlaz"
+
+        style="@style/stiloviOpcije"
+        android:onClick="izlaz"
+
+        android:text="Završi partiju" />
+
+</TableLayout>
