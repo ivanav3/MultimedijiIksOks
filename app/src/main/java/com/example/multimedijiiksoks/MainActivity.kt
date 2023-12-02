@@ -408,5 +408,12 @@ class MainActivity : AppCompatActivity() {
         oks.clear()
 
     }
+    //da predje na poslednji ekran
+    fun izlaz(view:View){
+        var gotovo = Intent(this, ZavrsnaAktivnost::class.java)
+        gotovo.putExtra("pobedeX", brojPobeda1)
+        gotovo.putExtra("pobedeO", brojPobeda2)
+        startActivity(gotovo)
+    }
 
 }

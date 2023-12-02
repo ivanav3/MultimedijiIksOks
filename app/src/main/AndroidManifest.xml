@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MultimedijiIksOks"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ZavrsnaAktivnost"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
