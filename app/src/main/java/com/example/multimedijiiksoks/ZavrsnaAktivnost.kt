@@ -1,6 +1,7 @@
 package com.example.multimedijiiksoks
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -9,9 +10,17 @@ import android.widget.TextView
 
 
 class ZavrsnaAktivnost : AppCompatActivity(){
+
+    var mp: MediaPlayer?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zavrsna_aktivnost)
+
+        if(mp==null){
+            mp=MediaPlayer.create(this,R.raw.kraj)
+            mp!!.isLooping=false
+            mp!!.start()
+        }
 
         var intent1: Intent
         intent1 = getIntent()
