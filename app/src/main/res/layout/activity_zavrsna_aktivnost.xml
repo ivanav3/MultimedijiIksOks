@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ZavrsnaAktivnost">
+    tools:context=".ZavrsnaAktivnost"
+    android:background="@drawable/gradient_animacija"
+    android:id="@+id/animacijaLayout">
 
 
     <Button
@@ -37,7 +39,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buKraj"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:shadowColor="#000000"
+        android:shadowDx="8"
+        android:shadowDy="8"
+        android:shadowRadius="8"/>
 
     <ImageView
         android:id="@+id/imageView2"

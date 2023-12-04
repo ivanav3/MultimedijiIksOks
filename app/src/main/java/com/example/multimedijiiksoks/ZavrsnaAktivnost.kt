@@ -1,17 +1,22 @@
 package com.example.multimedijiiksoks
 
 import android.content.Intent
+import android.graphics.drawable.AnimationDrawable
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 
 
 class ZavrsnaAktivnost : AppCompatActivity(){
 
     var mp: MediaPlayer?=null
+    lateinit var cl: ConstraintLayout
+    var ad: AnimationDrawable?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zavrsna_aktivnost)
@@ -21,6 +26,12 @@ class ZavrsnaAktivnost : AppCompatActivity(){
             mp!!.isLooping=false
             mp!!.start()
         }
+        cl=findViewById(R.id.animacijaLayout)
+
+        ad = cl.getBackground () as AnimationDrawable?
+        ad?.setEnterFadeDuration(2500)
+        ad?.setExitFadeDuration(5000)
+        ad?.start()
 
         var intent1: Intent
         intent1 = getIntent()
